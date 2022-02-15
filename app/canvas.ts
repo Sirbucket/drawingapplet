@@ -1,0 +1,1 @@
+const app:HTMLDivElement=document.querySelector('#app');export const c:HTMLCanvasElement=document.createElement('canvas');export const ctx=c.getContext('2d');export const w=1920;export const h=1080;c.width=w;c.height=h;app.style.width=`${ w }px`;app.style.height=`${ h }px`;c.style.width=`${ w }px`;c.style.height=`${ h }px`;app.appendChild(c);

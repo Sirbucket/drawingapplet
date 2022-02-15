@@ -1,0 +1,1 @@
+import{w}from './canvas';export const ctrlb:HTMLDivElement=document.querySelector('#controls');ctrlb.style.width=`${ w }px`;export const mb=(n:string)=>{const b=document.createElement("button");b.innerText=n;ctrlb.appendChild(b);return b}

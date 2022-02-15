@@ -1,0 +1,1 @@
+import{mb}from "./controls";export const cls=["Red","Blue","Green","Yellow","Orange","Brown","Black","Pink","Purple"];export const eb=mb('Eraser');export const clb=mb(" 🗑 ");export const dlb=mb("Draw in Lines");export const dfb=mb("Draw In Fills");export const sb=mb("Save");
