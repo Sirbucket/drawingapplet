@@ -15,7 +15,9 @@
   flex-wrap: wrap;
   gap: 5px;
 }
-
+body{
+	background-color:cadetblue;
+}
 button {
   padding : 4px;
   border-radius: 4px;
@@ -32,7 +34,6 @@ button:active {
   border-color: rgb(51, 154, 250);
 }
 
-
 canvas {
   position: absolute;
   margin: auto;
@@ -41,4 +42,6 @@ canvas {
   width: 1600px;
   height: 900px;
   display: block;
+	background-color: steelblue;
 }
+

@@ -30,8 +30,8 @@ clearButton.addEventListener("click", () => {
 
 eraserButton.addEventListener("click", () => {
   fm = true;
-  ctx.strokeStyle = "white";
-  ctx.fillStyle = "white";
+  ctx.strokeStyle = "steelblue";
+  ctx.fillStyle = "steelblue";
 });
 
 /*
