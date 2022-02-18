@@ -1,1 +1,13 @@
-import{w}from './canvas';export const ctrlb:HTMLDivElement=document.querySelector('#controls');ctrlb.style.width=`${ w }px`;export const mb=(n:string)=>{const b=document.createElement("button");b.innerText=n;ctrlb.appendChild(b);return b}
+//Controls
+
+import {width} from './canvas';
+
+export const controlBox : HTMLDivElement = document.querySelector('#controls');
+controlBox.style.width = `${width}px`
+
+export const makeButton = (name : string) => {
+  const button = document.createElement("button");
+  button.innerText = name;
+  controlBox.appendChild(button);
+  return button;
+}

@@ -1,1 +1,20 @@
-import{mb}from "./controls";export const cls=["Red","Blue","Green","Yellow","Orange","Brown","Black","Pink","Purple"];export const eb=mb('Eraser');export const clb=mb(" 🗑 ");export const dlb=mb("Draw in Lines");export const dfb=mb("Draw In Fills");export const sb=mb("Save");
+//Definitions for app
+
+import {makeButton} from "./controls";
+
+export const colors = [
+	"Red",
+	"Blue",
+	"Green",
+	"Yellow",
+	"Orange",
+	"Brown",
+	"Black",
+	"Pink",
+	"Purple",
+]
+export const eraserButton = makeButton('Eraser');
+export const clearButton = makeButton(" 🗑 ");
+export const drawInLinesButton = makeButton("Draw in Lines");
+export const drawInFillsButton = makeButton("Draw In Fills");
+export const saveButton = makeButton("Save");
