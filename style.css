@@ -1,5 +1,5 @@
 #app {
-  font-family: "Calibri", Calibri;
+  font-family: "Calibri";
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: auto;
   text-align: center;
@@ -17,11 +17,11 @@
 }
 
 button {
-  padding : 5px;
+  padding : 4px;
   border-radius: 4px;
   border-color: transparent;
-  background-color: black;
-  color: white;
+  background-color: rgb(155, 185, 199);
+  color: rgb(255, 255, 255);
 }
 
 button:hover {
