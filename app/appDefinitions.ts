@@ -1,6 +1,11 @@
 //Definitions for app
 
 import {makeButton} from "./controls";
+import {ctx} from "./canvas"
+
+ctx.lineWidth = 5;
+ctx.lineCap = "round";
+ctx.lineJoin = "round";
 
 export const colors = [
 	"Red",

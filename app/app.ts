@@ -8,14 +8,10 @@ import {
 		clearButton,
 		drawInLinesButton,
 		drawInFillsButton,
-		saveButton
+		saveButton,
 } from "./appDefinitions";
 
 let fm = false;
-
-ctx.lineWidth = 5;
-ctx.lineCap = "round";
-ctx.lineJoin = "round";
 
 //Colors
 for (const color of colors) {
@@ -25,7 +21,7 @@ for (const color of colors) {
 		ctx.strokeStyle = color;
 		ctx.fillStyle = color;
 		});
-}
+};
 
 //Clears canvas
 clearButton.addEventListener("click", () => {
