@@ -34,11 +34,10 @@ button:active {
 
 
 canvas {
-  position: relative;
+  position: absolute;
   margin: auto;
   border: 5px solid rgb(39, 71, 92);
-	border-radius: 6px;
-	padding: 8px;
+	border-radius: 16px;
   width: 1600px;
   height: 900px;
   display: block;
