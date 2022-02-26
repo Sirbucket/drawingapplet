@@ -3,6 +3,7 @@
 import {makeButton} from "./controls";
 import {ctx,canvas} from "./canvas"
 
+//Dynamic lineWidth, written badly although cheaply, typescript is weird sometimes.
 window.addEventListener("load", () => {
 	if (canvas.height >= 3840) (canvas.width >= 2160); {
 		ctx.lineWidth = 7;
