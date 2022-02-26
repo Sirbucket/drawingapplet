@@ -1,71 +1,71 @@
 //Definitions for app
 
 import {makeButton} from "./controls";
-import {ctx,width,height} from "./canvas"
+import {ctx,canvas} from "./canvas"
 window.addEventListener("load", () => {
-	if (height >= 3840) (width >= 2160); {
+	if (canvas.height >= 3840) (canvas.width >= 2160); {
 		ctx.lineWidth = 7;
 		return;
 	}
-	if (height >= 2560) (width >= 1440); {
+	if (canvas.height >= 2560) (canvas.width >= 1440); {
 		ctx.lineWidth = 6;
 		return;
 	}
-	if (height >= 1920) (width >= 1080); {
+	if (canvas.height >= 1920) (canvas.width >= 1080); {
 		ctx.lineWidth = 5;
 		return;
 	}
-	if (height >= 1600) (width >= 900); {
+	if (canvas.height >= 1600) (canvas.width >= 900); {
 		ctx.lineWidth = 4;
 		return;
 	}
-	if (height >= 1280) (width >= 720); {
+	if (canvas.height >= 1280) (canvas.width >= 720); {
 		ctx.lineWidth = 3.5;
 		return;
 	}
-	if (height >= 900) (width >= 600); {
+	if (canvas.height >= 900) (canvas.width >= 600); {
 		ctx.lineWidth = 3;
 		return;
 	}
-	if (height >= 640) (width >= 480); {
+	if (canvas.height >= 640) (canvas.width >= 480); {
 		ctx.lineWidth = 2;
 		return;
 	}
-	if (height < 640) (width < 480); {
+	if (canvas.height < 640) (canvas.width < 480); {
 		ctx.lineWidth = 1;
 		return;
 	}
 });
 window.addEventListener("resize", () => {
-	if (height >= 3840) (width >= 2160); {
+	if (canvas.height >= 3840) (canvas.width >= 2160); {
 		ctx.lineWidth = 7;
 		return;
 	}
-	if (height >= 2560) (width >= 1440); {
+	if (canvas.height >= 2560) (canvas.width >= 1440); {
 		ctx.lineWidth = 6;
 		return;
 	}
-	if (height >= 1920) (width >= 1080); {
+	if (canvas.height >= 1920) (canvas.width >= 1080); {
 		ctx.lineWidth = 5;
 		return;
 	}
-	if (height >= 1600) (width >= 900); {
+	if (canvas.height >= 1600) (canvas.width >= 900); {
 		ctx.lineWidth = 4;
 		return;
 	}
-	if (height >= 1280) (width >= 720); {
+	if (canvas.height >= 1280) (canvas.width >= 720); {
 		ctx.lineWidth = 3.5;
 		return;
 	}
-	if (height >= 900) (width >= 600); {
+	if (canvas.height >= 900) (canvas.width >= 600); {
 		ctx.lineWidth = 3;
 		return;
 	}
-	if (height >= 640) (width >= 480); {
+	if (canvas.height >= 640) (canvas.width >= 480); {
 		ctx.lineWidth = 2;
 		return;
 	}
-	if (height < 640) (width < 480); {
+	if (canvas.height < 640) (canvas.width < 480); {
 		ctx.lineWidth = 1;
 		return;
 	}
