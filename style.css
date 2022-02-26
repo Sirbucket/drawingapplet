@@ -16,13 +16,13 @@
   gap: 5px;
 }
 body{
-	background-color:cadetblue;
+	background-color:rgb(60,130,230);
 }
 button {
   padding : 4px;
   border-radius: 4px;
   border-color: transparent;
-  background-color: rgb(155, 185, 199);
+  background-color: rgb(60, 80, 100);
   color: rgb(255, 255, 255);
 }
 
@@ -39,9 +39,7 @@ canvas {
   margin: auto;
   border: 5px solid rgb(39, 71, 92);
 	border-radius: 16px;
-  width: 1600px;
-  height: 900px;
   display: block;
-	background-color: steelblue;
+	background-color: white;
 }
 
