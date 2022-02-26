@@ -2,6 +2,7 @@
 
 import {makeButton} from "./controls";
 import {ctx,canvas} from "./canvas"
+
 window.addEventListener("load", () => {
 	if (canvas.height >= 3840) (canvas.width >= 2160); {
 		ctx.lineWidth = 7;
@@ -71,8 +72,16 @@ window.addEventListener("resize", () => {
 	}
 });
 
-ctx.lineCap = "round";
-ctx.lineJoin = "round";
+export const caps = [
+	"round",
+	"square",
+]
+
+export const connections = [
+	"bevel",
+	"round",
+	"miter",
+]
 
 export const colors = [
 	"Red",
@@ -85,7 +94,6 @@ export const colors = [
 	"Pink",
 	"Purple",
 	"Maroon",
-	"Beige",
 	"Teal",
 	"SteelBlue",
 	"Gray",

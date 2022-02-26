@@ -37,7 +37,7 @@ button:active {
 canvas {
   position: absolute;
   margin: auto;
-  border: 5px solid rgb(39, 71, 92);
+  border: 5px solid rgb(10, 20, 40);
 	border-radius: 16px;
   display: block;
 	background-color: white;
