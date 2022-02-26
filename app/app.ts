@@ -1,7 +1,6 @@
 //App
-
 import {ctx, canvas} from "./canvas";
-import {controlBox, makeButton} from "./controls";
+import {makeButton} from "./controls";
 import {
 		caps,
 		connections,
@@ -27,10 +26,10 @@ for (const cap of caps) {
 //How the line connects, in general round looks best but there can be reasons for the other two.
 for (const connection of connections) {
 	const connectionButton = makeButton("Connect " + connection);
-	connectionButton.addEventListener("click", () =>{
+	connectionButton.addEventListener("click", () => {
 		//Also false error.
 		ctx.lineJoin = connection;		
-	})
+	});
 }
 //Colors
 for (const color of colors) {
@@ -72,10 +71,7 @@ saveButton.addEventListener("click", () => {
   link.click();
 });
 
-/*
-Drawing functionality, first listener checks mouse down then offsets the initial moveto. Mousemove draws a line where your mouse is moving while mouse down, then determins whether to stroke or fill based on fillmode being true or false.
-*/
-
+//Drawing functionality, first listener checks mouse down then offsets the initial moveto. Mousemove draws a line where your mouse is moving while mouse down, then determins whether to stroke or fill based on fillmode being true or false.
 canvas.addEventListener("mousedown", (event) => {
   ctx.beginPath();
 	ctx.moveTo(event.offsetX, event.offsetY);
@@ -91,7 +87,8 @@ canvas.addEventListener("mousemove", (event) => {
 canvas.addEventListener("mouseup", () => {
 	if (fm === true) {
     ctx.fill();
+		return;
 } else {
     ctx.stroke();
   }
-})
+});
