@@ -4,8 +4,8 @@ const app : HTMLDivElement = document.querySelector('#app');
 export const canvas: HTMLCanvasElement = document.createElement('canvas');
 
 export const ctx = canvas.getContext('2d');
-export const width = window.innerWidth;
-export const height = window.innerHeight;
+export const width = window.outerWidth/1.1;
+export const height = window.outerHeight/1.1;
 
 //Refactored archaeic definition for dynamic canvas resizing.
 window.addEventListener("load", () => {
