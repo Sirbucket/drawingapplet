@@ -16,13 +16,13 @@ window.addEventListener("resize", () => {
 export const caps = [
 	"round",
 	"square",
-]
+];
 
 export const connections = [
 	"bevel",
 	"round",
 	"miter",
-]
+];
 
 export const colors = [
 	"Red",
@@ -36,9 +36,8 @@ export const colors = [
 	"Purple",
 	"Maroon",
 	"Teal",
-	"SteelBlue",
 	"Gray",
-]
+];
 
 export const eraserButton = makeButton('Eraser');
 export const clearButton = makeButton(" 🗑 ");

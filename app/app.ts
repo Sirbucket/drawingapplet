@@ -12,7 +12,6 @@ import {
 		saveButton,
 } from "./appDefinitions";
 import {each} from "lodash"; //Yet still works. (Using each instead of a for loop, highly performant compared to for of and in my opinion makes as much sense.. https://www.incredible-web.com/blog/performance-of-for-loops-with-javascript/)
-import {} from "./sw.js"
 
 let fm = false;
 
@@ -32,7 +31,7 @@ each(connections, (connection : string) => {
 	});
 });
 //Colors
-each(colors, (color) => {
+each(colors,color => {
 	const colorButton : HTMLButtonElement = makeButton(color);
 	colorButton.style.background = color;
 	colorButton.addEventListener("click", () => {
@@ -72,12 +71,12 @@ saveButton.addEventListener("click", () => {
 });
 
 //Drawing functionality, first listener checks mouse down then offsets the initial moveto. Mousemove draws a line where your mouse is moving while mouse down, then determins whether to stroke or fill based on fillmode being true or false.
-canvas.addEventListener("mousedown", (event) => {
+canvas.addEventListener("mousedown",event => {
   ctx.beginPath();
 	ctx.moveTo(event.offsetX, event.offsetY);
 });
 
-canvas.addEventListener("mousemove", (event) => {
+canvas.addEventListener("mousemove",event => {
   if (event.buttons === 1) {
     ctx.lineTo(event.offsetX, event.offsetY);
   }
@@ -90,13 +89,5 @@ canvas.addEventListener("mouseup", () => {
 		return;
 } else {
     ctx.stroke();
-  }
-});
-
-window.addEventListener('pageshow', (event) => {
-  if (event.persisted) {
-    console.log('This page was restored from the bfcache.');
-  } else {
-    console.log('This page was loaded normally.');
   }
 });
