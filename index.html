@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#2c3e50">
-		<link rel="manifest" href="./manifest.json">
 		<link rel="stylesheet" href="./style.css">
 		<link rel="apple-touch-icon" href="./app/images/paint-palette.png">
     <title>Applet</title>
@@ -14,17 +13,5 @@
     <div id="app"></div>
 		<a id="link"></a>
 		<script type = "module" src="./app/app.ts" defer></script>
-		<script>
-			if("serviceWorker" in navigator) {
-				window.addEventListener("load", () => {
-					navigator.serviceWorker.register("./app/sw.ts").then(swReg => {
-						console.log("Worker supported, loading.");
-						
-					}).catch(error => {
-						console.log("Service worker error:", error);
-					})
-				})
-			}
-		</script>
   </body>
 </html>
