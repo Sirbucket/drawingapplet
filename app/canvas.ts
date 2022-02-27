@@ -4,8 +4,6 @@ const app : HTMLDivElement = document.querySelector('#app');
 export const canvas: HTMLCanvasElement = document.createElement('canvas');
 
 export const ctx = canvas.getContext('2d');
-
-//Sets canvas width and height to inner screen width and height then gets the new size whenever the screen is resized.
 export const width = window.innerWidth;
 export const height = window.innerHeight;
 

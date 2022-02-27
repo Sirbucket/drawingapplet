@@ -11,35 +11,34 @@ import {
 		drawInFillsButton,
 		saveButton,
 } from "./appDefinitions";
+import {each} from "lodash"; //Yet still works. (Using each instead of a for loop, highly performant compared to for of and in my opinion makes as much sense.. https://www.incredible-web.com/blog/performance-of-for-loops-with-javascript/)
 
 let fm = false;
 
-//Capping method, in general round looks best but ther can be a reason to cap square, especially for more logically based stuff.
-for (const cap of caps) {
-	const capButton = makeButton("Cap " + cap);
+//Capping method.
+each(caps, (cap : string) => {
+	const capButton : HTMLButtonElement = makeButton("Cap " + cap);
 	capButton.addEventListener("click", () => {
-		//False error, typescript is dumb sometimes.
+		//Fake error, typescript is dumb.
 		ctx.lineCap = cap;
 	});
-}
-
-//How the line connects, in general round looks best but there can be reasons for the other two.
-for (const connection of connections) {
-	const connectionButton = makeButton("Connect " + connection);
+});
+//How the line connects visually.
+each(connections, (connection : string) => {
+	const connectionButton : HTMLButtonElement = makeButton("Connect " + connection);
 	connectionButton.addEventListener("click", () => {
-		//Also false error.
-		ctx.lineJoin = connection;		
+		ctx.lineJoin = connection;
 	});
-}
+});
 //Colors
-for (const color of colors) {
-	const colorButton = makeButton(color);
-	colorButton.style.backgroundColor = color;
+each(colors, (color) => {
+	const colorButton : HTMLButtonElement = makeButton(color);
+	colorButton.style.background = color;
 	colorButton.addEventListener("click", () => {
-		ctx.strokeStyle = color;
 		ctx.fillStyle = color;
-	});
-};
+		ctx.strokeStyle = color;
+	})
+})
 
 //Clears canvas
 clearButton.addEventListener("click", () => {
@@ -90,5 +89,13 @@ canvas.addEventListener("mouseup", () => {
 		return;
 } else {
     ctx.stroke();
+  }
+});
+
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    console.log('This page was restored from the bfcache.');
+  } else {
+    console.log('This page was loaded normally.');
   }
 });
