@@ -1,5 +1,4 @@
 //Controls
-
 import {width} from './canvas';
 
 export const controlBox : HTMLDivElement = document.querySelector('#controls');

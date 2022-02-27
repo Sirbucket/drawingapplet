@@ -1,5 +1,4 @@
 //Canvas Defining
-
 const app : HTMLDivElement = document.querySelector('#app');
 export const canvas: HTMLCanvasElement = document.createElement('canvas');
 

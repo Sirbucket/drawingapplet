@@ -1,5 +1,4 @@
 //Definitions for app
-
 import {makeButton} from "./controls";
 import {ctx,canvas} from "./canvas"
 

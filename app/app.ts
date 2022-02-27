@@ -11,7 +11,7 @@ import {
 		drawInFillsButton,
 		saveButton,
 } from "./appDefinitions";
-import {each} from "lodash"; //Yet still works. (Using each instead of a for loop, highly performant compared to for of and in my opinion makes as much sense.. https://www.incredible-web.com/blog/performance-of-for-loops-with-javascript/)
+import {each} from "lodash"; 
 
 let fm = false;
 
