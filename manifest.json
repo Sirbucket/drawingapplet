@@ -1,0 +1,17 @@
+{
+  "short_name": "Drawing App",
+  "name": "Drawing App by William Tuleja",
+  "icons": [
+    {
+      "src": "./app/images/paint-palette.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+  ],
+  "start_url": "/sharp-boyd-303a4c.netlify.app/",
+  "background_color": "#2c3e50",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#2c3e50",
+  "description": "Extremely simple drawing applet by William Tuleja",
+}
